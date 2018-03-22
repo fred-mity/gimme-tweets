@@ -2,7 +2,7 @@
 
 ## Installation
 
-- Clone project and go in project folder `cd give-me-tweets`
+- Clone project and go in project folder `cd gimme-tweets`
 - Run `npm install`
 - Run `npm install -g cordova ionic`
 - Run `npm run ionic:serve`
