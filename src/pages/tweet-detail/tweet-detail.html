@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Detail
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="tweet">
+    <ion-item *ngIf="tweet.user">
+      <ion-avatar item-start>
+        <img [src]="tweet.user.profile_image_url">
+      </ion-avatar>
+      <h2>{{tweet.user.name}}</h2>
+      <p>{{tweet.created_at}}</p>
+    </ion-item>
+
+    <!-- <img src="img/advance-card-bttf.png"> -->
+
+    <ion-card-content>
+      <p>{{tweet.full_text}}</p>
+    </ion-card-content>
+
+    <div class="card-footer">
+        <button ion-button icon-left clear small>
+          <ion-icon name="git-compare"></ion-icon>
+          <div>{{tweet.retweet_count}}
+            <span *ngIf="tweet.retweet_count > 1">Retweets</span>
+            <span *ngIf="tweet.retweet_count <= 1">Retweet</span>
+          </div>
+        </button>
+        <button ion-button icon-left clear small>
+          <ion-icon name="heart-outline"></ion-icon>
+          <div>{{tweet.favorite_count}}
+            <span *ngIf="tweet.favorite_count > 1">Favorites</span>
+            <span *ngIf="tweet.favorite_count <= 1">Favorite</span>
+          </div>
+        </button>
+      </div>
+
+  </ion-card>
+</ion-content>
