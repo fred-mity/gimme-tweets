@@ -1,0 +1,81 @@
+page-tweets {
+}
+
+ion-title ion-icon {
+  margin-left: 4px;
+  margin-right: 20px;
+}
+
+.list-header-md {
+  color: color($colors, light, base);
+}
+
+ion-item.item-md {
+  color: color($colors, dark, base);
+  background-color: color($colors, light, base);
+  width: initial;
+  border-radius: 16px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: color($colors, secondary);
+  box-sizing: border-box;
+  margin: 12px 8px;
+}
+
+ion-item h2 {
+  color: color($colors, primary);
+}
+
+ion-item.item-md p, .note-md {
+  color: color($colors, dark, contrast);
+}
+
+ion-item.item-md.item-block .item-inner {
+  border-bottom: 0;
+}
+
+#egg {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #212121;
+  text-align: center;
+  z-index: 1000;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#egg span {
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  left: 0; right: 0; bottom: 10px;
+  text-align: center;
+}
+
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

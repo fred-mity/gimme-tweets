@@ -1,0 +1,40 @@
+page-tweet-detail {
+}
+
+ion-card ion-item.item-md {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom: 2px solid color($colors, light, contrast);
+}
+
+ion-card ion-item.item-md p, ion-card ion-item.item-md h2 {
+  color: color($colors, light, base);
+}
+
+ion-card.card-md {
+  background-color: color($colors, light, contrast);
+  border: 3px solid color($colors, secondary);
+  border-radius: 16px;
+  padding: 0px 10px;
+}
+
+.card-content-md {
+  margin-top: 20px;
+}
+
+.card-md h2 {
+  font-weight: bold;
+}
+
+.card-md p {
+  color: color($colors, light, base);
+}
+
+.button-clear-md {
+  color: color($colors, light, base);
+}
+
+.card-footer {
+  text-align: end;
+}

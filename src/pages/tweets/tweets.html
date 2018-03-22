@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <span>{{title}} tweets</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (tap)="getLastTweets()">
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+    </ion-buttons>
+    <!-- <ion-buttons end>
+      <button ion-button icon-only color="royal" (tap)="revokeToken()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header id="eggBtn">Last {{nbTweets}} Tweets</ion-list-header>
+
+    <ion-item *ngFor="let tweet of tweets" (tap)="showDetail(tweet.id_str)">
+      <ion-avatar item-start>
+        <img [src]="tweet.user.profile_image_url">
+      </ion-avatar>
+      <h2>{{tweet.user.name}}</h2>
+      <p>{{tweet.text}}</p>
+      <ion-note item-end>{{tweet.created_at}}</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<div id="egg">
+  <img src="assets/imgs/bruh.jpg" alt="Bruh de bro">
+  <span>Pas de check, pas de bras !</span>
+</div>

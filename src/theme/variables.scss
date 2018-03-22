@@ -1,0 +1,104 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #1976D2,
+  secondary:  #9E9E9E,
+  danger:     #f53d3d,
+  light:  (
+    base:     #fafafa,
+    contrast: rgba(255,255,255,0.1)
+  ),
+  dark:   (
+    base:     #212121,
+    contrast: #424242
+  )
+);
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+$background-color: color($colors, dark, base);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+$loading-ios-border-radius: 16px;
+$loading-ios-text-color: color($colors, light, base);
+$loading-ios-background : color($colors, dark, base);
+$loading-ios-spinner-color : color($colors, secondary);
+$loading-ios-spinner-ios-color : color($colors, secondary);
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+$loading-md-border-radius: 16px;
+$loading-md-text-color: color($colors, light, base);
+$loading-md-background: color($colors, dark, base);
+$loading-md-spinner-color : color($colors, secondary);
+$loading-md-spinner-ios-color : color($colors, secondary);
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+$loading-wp-border-radius: 16px;
+$loading-wp-text-color: color($colors, light, base);
+$loading-wp-background: color($colors, dark, base);
+$loading-wp-spinner-color: color($colors, secondary);
+$loading-wp-spinner-ios-color: color($colors, secondary);
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";

@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "no-duplicate-variable": true,
+    "no-unused-variable": [ true ],
+    "semicolon": [true, "always"],
+    "curly": true,
+    "import-spacing": true,
+    "indent": [ true, "spaces" ],
+    "interface-over-type-literal": true,
+    "member-access": false,
+    "no-unused-expression": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ]
+}
